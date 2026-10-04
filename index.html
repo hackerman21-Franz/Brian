@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171129">
+  <title>Happy Birthday, Brian Paul! ✦</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap');
+    :root{--ink:#f8eee0;--muted:#bcb0c8;--pink:#f5a9c7;--gold:#e9c68b;--bg:#171129}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',sans-serif;overflow-x:hidden}button{font:inherit}button:focus-visible{outline:3px solid white;outline-offset:6px}
+    body:before{content:'';position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at 75% 43%,#59324e55,transparent 43%),radial-gradient(ellipse at 0% 60%,#36275466,transparent 45%);z-index:-1}
+    .page{max-width:1440px;margin:auto;padding:32px 6% 22px}.topbar{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff17;padding-bottom:24px;font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase}.brand{display:flex;align-items:center;gap:12px}.brand b{font-size:25px;color:var(--gold)}.tag{border:1px solid #d9b88944;border-radius:30px;padding:9px 15px;color:var(--gold);font-size:9px;letter-spacing:2px}
+    main{position:relative}.hero{min-height:650px;display:grid;grid-template-columns:1.1fr 1fr;align-items:center;gap:20px;padding:55px 0 40px}.eyebrow{color:var(--gold);font-size:10px;letter-spacing:3px;font-weight:700;display:flex;align-items:center;gap:12px}.eyebrow:before{content:'';width:30px;height:1px;background:var(--gold)}h1{font-family:'Playfair Display',Georgia,serif;font-weight:600;font-size:clamp(62px,6.8vw,100px);line-height:1.02;letter-spacing:-4px;margin:25px 0 20px}h1 em{color:var(--pink);font-weight:600}.name{font-size:18px;letter-spacing:4px;text-transform:uppercase;font-weight:500;margin:25px 0 19px}.intro{max-width:380px;color:var(--muted);font-size:14px;line-height:1.85}.actions{display:flex;align-items:center;gap:18px;margin-top:31px}.wish-button{border:0;background:var(--pink);color:#26172c;border-radius:50px;padding:17px 25px;font-weight:700;font-size:12px;cursor:pointer;box-shadow:0 6px 35px #f5a9c716;transition:transform .2s,background .2s}.wish-button:hover{transform:translateY(-3px);background:#ffd0e1}.hint{color:#93879e;font-size:10px;font-style:italic}.little-note{font-size:10px;letter-spacing:1px;color:#9e90ad;margin-top:28px}.little-note span{color:var(--gold);margin-right:8px}
+    .art{position:relative;height:520px;display:grid;place-items:center}.orbit{position:absolute;width:450px;height:450px;border:1px solid #d9b88920;border-radius:50%;transform:rotate(-20deg)}.orbit:after{content:'';position:absolute;inset:25px;border:1px dashed #d9b88915;border-radius:50%}.halo{position:absolute;width:370px;height:370px;border-radius:50%;background:radial-gradient(circle,#d98fa81b,transparent 70%)}.star{position:absolute;color:var(--gold);font-size:28px;animation:twinkle 3s ease-in-out infinite}.s1{top:65px;left:70px;font-size:42px}.s2{right:30px;top:190px}.s3{bottom:75px;left:62px;font-size:19px}.s4{right:82px;bottom:70px;font-size:40px}.s5{top:100px;right:80px;font-size:14px}.art-label{position:absolute;top:42px;font-size:10px;letter-spacing:4px;color:var(--gold);transform:rotate(-9deg)}.handwritten{position:absolute;bottom:22px;font:italic 23px 'Playfair Display',Georgia,serif;color:var(--pink);transform:rotate(-7deg)}
+    .cake{position:relative;width:310px;height:300px;margin-top:32px;filter:drop-shadow(0 20px 35px #0003);animation:float 5s ease-in-out infinite}.plate{position:absolute;bottom:8px;left:-30px;width:370px;height:46px;border-radius:50%;background:linear-gradient(#d1ac81,#9b6d67);box-shadow:0 8px 0 #765065}.tier{position:absolute;border-radius:50% / 20%;width:100%;height:137px;bottom:30px;background:linear-gradient(90deg,#b6698b,#e6a2b5 45%,#c8809e);box-shadow:inset 0 -8px 10px #77405233}.tier:before{content:'';position:absolute;top:0;left:0;width:100%;height:52px;border-radius:50%;background:#f2bfcb}.upper{width:222px;height:106px;bottom:146px;left:44px;background:linear-gradient(90deg,#deb2a5,#ffe1c4 45%,#e3b5ac);border-radius:50% / 24%}.upper:before{height:48px;background:#ffe6cb}.icing{position:absolute;top:22px;width:100%;height:30px;border-radius:0 0 45% 45%;background:#f2bfcb}.upper .icing{background:#ffe6cb}.drip{position:absolute;top:35px;width:18px;height:32px;border-radius:0 0 15px 15px;background:#f2bfcb;left:35px}.drip:nth-child(2){left:86px;height:20px}.drip:nth-child(3){left:auto;right:44px;height:38px}.upper .drip{background:#ffe6cb;left:28px;width:14px;height:22px}.upper .drip:nth-child(2){left:94px;height:31px}.upper .drip:nth-child(3){left:auto;right:29px;height:19px}.pearls{position:absolute;bottom:14px;left:22px;right:22px;display:flex;justify-content:space-around;color:#ffe0cd;font-size:14px}.candle{position:absolute;width:11px;height:58px;bottom:232px;left:149px;background:repeating-linear-gradient(135deg,#d184a8 0 6px,#ffe4d7 6px 12px);border-radius:3px;z-index:3}.candle:nth-child(2){left:103px;height:46px;bottom:234px}.candle:nth-child(3){left:195px;height:46px;bottom:234px}.flame{position:absolute;left:-1px;top:-28px;width:13px;height:23px;border-radius:70% 30% 60% 40%;background:linear-gradient(#fff6b9,#ffc775 65%,#f49c65);box-shadow:0 0 18px #ffcd83aa,0 0 40px #ffd19444;transform-origin:bottom;animation:flicker .8s ease-in-out infinite alternate;transition:opacity .5s}.blown .flame{opacity:0}.sprinkle{position:absolute;width:3px;height:8px;border-radius:2px;background:#f7d5b0;transform:rotate(30deg);left:24px;top:76px;box-shadow:45px -6px #9c5079,84px 8px #fff1d0,123px -3px #9c5079,169px 12px #fff1d0,208px -6px #9c5079,244px 1px #fff1d0}
+    .wishes{border-top:1px solid #ffffff17;padding-top:26px;display:grid;grid-template-columns:170px 1fr 1fr 1fr;gap:30px;align-items:start}.section-label{font-size:9px;letter-spacing:2px;line-height:1.8;color:#a597af;padding-top:6px}.wish{display:flex;gap:14px}.wish-icon{font-size:24px;color:var(--gold);line-height:1.2}.wish h2{font-family:'Playfair Display',Georgia,serif;font-size:19px;font-weight:500;margin:0 0 8px}.wish p{color:#a597af;font-size:11px;line-height:1.7;margin:0;max-width:200px}footer{display:flex;justify-content:space-between;gap:16px;padding-top:43px;color:#756882;font-size:9px;letter-spacing:1px}footer span:last-child{color:#ac91a8}#confetti{position:fixed;inset:0;pointer-events:none;z-index:10}.message{color:var(--gold);font-size:12px;min-height:20px;margin-top:15px;max-width:390px;line-height:1.6}.message:empty{display:none}
+    @keyframes twinkle{50%{opacity:.35;transform:scale(.8)}}@keyframes float{50%{transform:translateY(-9px)}}@keyframes flicker{to{transform:rotate(7deg) scale(.9,1.08)}}
+    @media(min-width:1500px){.hero{min-height:710px}}@media(max-width:1000px){.page{padding:25px 5%}.hero{grid-template-columns:1fr 1fr;min-height:590px}h1{font-size:76px}.art{transform:scale(.82);margin:0 -40px}.name{font-size:14px;letter-spacing:3px}.wishes{grid-template-columns:1fr 1fr 1fr}.section-label{grid-column:1/-1}.intro{font-size:13px}.hint{display:none}}@media(max-width:650px){.topbar{font-size:9px;letter-spacing:1.5px}.tag{font-size:8px;padding:8px 10px;letter-spacing:1px}.hero{grid-template-columns:1fr;text-align:center;padding-top:46px;gap:0}.eyebrow{justify-content:center;font-size:9px}h1{font-size:73px;letter-spacing:-3px;margin-top:23px}.name{font-size:13px;letter-spacing:2.7px}.intro{margin:0 auto;max-width:320px}.actions{justify-content:center;margin-top:25px}.little-note{margin-top:22px}.art{height:440px;transform:scale(.85);margin:-8px -20px -35px}.orbit{width:390px;height:390px}.art-label{top:12px}.handwritten{bottom:-1px}.s1{left:45px;top:50px}.s2{right:20px}.s4{bottom:30px;right:40px}.s3{bottom:35px;left:40px}.message{margin-left:auto;margin-right:auto}.wishes{grid-template-columns:1fr;gap:24px;padding-top:23px}.section-label{text-align:center}.wish{justify-content:center}.wish h2{font-size:20px}.wish p{max-width:245px}.wish-icon{width:27px}.wish>div{width:245px}footer{font-size:8px;padding-top:35px;line-height:1.6}.art .cake{margin-top:0}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+    [hidden]{display:none!important}
+    .gate{min-height:100svh;display:grid;place-items:center;padding:32px 22px;position:relative;overflow:hidden}
+    .gate:before,.gate:after{content:'✧';position:absolute;color:var(--gold);font-size:70px;opacity:.4;pointer-events:none}.gate:before{top:10%;left:12%;transform:rotate(-15deg)}.gate:after{bottom:10%;right:12%;font-size:100px}
+    .gate-card{width:min(100%,560px);text-align:center;padding:48px 28px;border:1px solid #e9c68b30;border-radius:32px;background:linear-gradient(145deg,#35233eaa,#1c152fdd);box-shadow:0 30px 100px #0003}
+    .gate-step{color:var(--gold);font-size:10px;letter-spacing:3px;text-transform:uppercase}.gate-icon{font-size:65px;margin:28px 0 12px}.gate h1{font-size:clamp(39px,7vw,62px);letter-spacing:-2px;line-height:1.13;margin:18px 0}.gate-copy{color:var(--muted);font-size:14px;line-height:1.8;max-width:350px;margin:0 auto}.gate-actions{display:flex;justify-content:center;gap:16px;margin-top:30px}.gate-actions button{min-width:108px;touch-action:manipulation}.no-slot{width:108px;height:49px}.no-button{height:49px;border:1px solid #f5a9c755;border-radius:50px;background:#2b1d38;color:var(--pink);font-weight:700;font-size:12px;cursor:pointer;z-index:20;padding:12px 24px}.gate-tease{color:var(--gold);font-size:11px;min-height:32px;margin:24px 0 0;line-height:1.6}
+    .cat-party{position:absolute;inset:85px 40px 70px;display:grid;place-items:center;gap:12px;z-index:4}
+    .cat-party img{display:block;width:100%;height:100%;min-height:0;object-fit:contain;border-radius:24px;filter:drop-shadow(0 14px 24px #0004)}
+    .cat-party span{color:var(--gold);font-size:10px;letter-spacing:2px;text-transform:uppercase}
+    @media(max-width:650px){.cat-party{inset:48px 36px 50px}}
+  </style>
+</head>
+<body>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <section class="gate" id="gate" aria-labelledby="gateTitle">
+    <div class="gate-card">
+      <div class="gate-step" id="gateStep">A tiny birthday checkpoint · 01 / 02</div>
+      <div class="gate-icon" id="gateIcon" aria-hidden="true">☺</div>
+      <h1 id="gateTitle" tabindex="-1">Smile before<br>you open <em>♡</em></h1>
+      <p class="gate-copy" id="gateCopy">Hey, Brian Paul! Put on your best birthday smile.<br>Ready to see what’s waiting for you?</p>
+      <div class="gate-actions"><button class="wish-button" id="yesButton" type="button">Okay! ✦</button><div class="no-slot"><button class="no-button" id="noButton" type="button">Nope!</button></div></div>
+      <p class="gate-tease" id="gateTease" role="status" aria-live="polite">A smile is your ticket in.</p>
+    </div>
+  </section>
+  <div class="page" id="greeting" hidden>
+    <header class="topbar"><div class="brand"><b aria-hidden="true">✳</b> A little celebration</div><span class="tag">Made just for you</span></header>
+    <main>
+      <section class="hero" aria-labelledby="birthday-title">
+        <div class="copy">
+          <div class="eyebrow">Today, the world is a little brighter</div>
+          <h1 id="birthday-title">Happy<br><em>Birthday.</em></h1>
+          <p class="name">Brian Paul Gempesao</p>
+          <p class="intro">Here’s to your kind of magic. To the big dreams, the little joys, and all the beautiful things still on their way to you.</p>
+          <div class="actions"><button class="wish-button" id="wishButton" type="button">Make a wish <span aria-hidden="true">&nbsp; ✦</span></button><span class="hint">A little birthday magic awaits</span></div>
+          <div class="message" id="message" role="status" aria-live="polite"></div>
+          <p class="little-note"><span aria-hidden="true">♡</span> Another trip around the sun. A whole new adventure.</p>
+        </div>
+        <div class="art" role="img" aria-label="A pink two-tier birthday cake with three glowing candles surrounded by golden stars">
+          <div class="orbit"></div><div class="halo"></div><div class="art-label">A DAY AS SPECIAL AS YOU</div>
+          <span class="star s1">✧</span><span class="star s2">✦</span><span class="star s3">✦</span><span class="star s4">✧</span><span class="star s5">✦</span>
+          <div class="cake" id="cake"><div class="candle"><span class="flame"></span></div><div class="candle"><span class="flame"></span></div><div class="candle"><span class="flame"></span></div><div class="plate"></div><div class="tier"><div class="icing"></div><span class="drip"></span><span class="drip"></span><span class="drip"></span><div class="sprinkle"></div><div class="pearls"><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span></div></div><div class="tier upper"><div class="icing"></div><span class="drip"></span><span class="drip"></span><span class="drip"></span></div></div>
+          <div class="handwritten">Go on, wish for something wonderful.</div>
+        </div>
+      </section>
+      <section class="wishes" aria-label="Birthday wishes"><div class="section-label">A FEW WISHES<br>FOR YOUR NEXT CHAPTER</div><article class="wish"><span class="wish-icon" aria-hidden="true">☼</span><div><h2>More little joys.</h2><p>The kind of days that make you stop and think, “Life is pretty good.”</p></div></article><article class="wish"><span class="wish-icon" aria-hidden="true">✧</span><div><h2>Bigger adventures.</h2><p>New places, brave beginnings, and stories you’ll tell for years.</p></div></article><article class="wish"><span class="wish-icon" aria-hidden="true">♡</span><div><h2>Love, always.</h2><p>Good people by your side, and a heart that feels right at home.</p></div></article></section>
+    </main>
+    <footer><span>ONE OF A KIND. WORTH CELEBRATING.</span><span>For Brian Paul, with love ♡</span></footer>
+  </div>
+  <script>
+    const gate = document.getElementById('gate');
+    const yesButton = document.getElementById('yesButton');
+    const noButton = document.getElementById('noButton');
+    let gateStep = 1;
+    function resetNo() { noButton.style.position = ''; noButton.style.left = ''; noButton.style.top = ''; }
+    function dodgeNo(event) {
+      if (gate.hidden) return;
+      if (event) event.preventDefault();
+      const rect = noButton.getBoundingClientRect();
+      const yes = yesButton.getBoundingClientRect();
+      const padding = 14;
+      const maxX = Math.max(padding, innerWidth - rect.width - padding);
+      const maxY = Math.max(padding, innerHeight - rect.height - padding);
+      const pointerX = event && event.clientX != null ? event.clientX : rect.left + rect.width / 2;
+      const pointerY = event && event.clientY != null ? event.clientY : rect.top + rect.height / 2;
+      let best = {x:padding,y:padding,score:-Infinity};
+      for (let i = 0; i < 60; i++) {
+        const x = padding + Math.random() * (maxX - padding);
+        const y = padding + Math.random() * (maxY - padding);
+        if (x < yes.right + 20 && x + rect.width > yes.left - 20 && y < yes.bottom + 20 && y + rect.height > yes.top - 20) continue;
+        const distance = Math.hypot(x + rect.width / 2 - pointerX, y + rect.height / 2 - pointerY);
+        if (distance > best.score) best = {x,y,score:distance};
+        if (distance > 160) { best = {x,y,score:distance}; break; }
+      }
+      noButton.style.position = 'fixed';
+      noButton.style.left = best.x + 'px';
+      noButton.style.top = best.y + 'px';
+      document.getElementById('gateTease').textContent = gateStep === 1 ? 'Oops! That No is a little shy. Try a smile instead ☺' : 'Nice try! Murag dijud ka makabalibad ani erps 😄';
+    }
+    noButton.addEventListener('pointerenter', event => { if (event.pointerType === 'mouse') dodgeNo(event); });
+    noButton.addEventListener('pointerdown', dodgeNo);
+    noButton.addEventListener('click', dodgeNo);
+    window.addEventListener('resize', resetNo);
+    yesButton.addEventListener('click', () => {
+      resetNo();
+      if (gateStep === 1) {
+        gateStep = 2;
+        document.getElementById('gateStep').textContent = 'One more little question · 02 / 02';
+        document.getElementById('gateIcon').textContent = '🍽️';
+        document.getElementById('gateTitle').textContent = 'Librehon nimo si Franz?';
+        document.getElementById('gateCopy').textContent = 'erps HAHAHAH, naa lang ta’y gamay nga sabot… 😏';
+        document.getElementById('gateTease').textContent = 'Your birthday surprise is just one Yes away.';
+        document.getElementById('gateTitle').focus();
+      } else {
+        gate.hidden = true;
+        document.getElementById('greeting').hidden = false;
+        const title = document.getElementById('birthday-title');
+        title.tabIndex = -1;
+        title.focus({preventScroll:true});
+        window.scrollTo(0,0);
+        celebrate();
+      }
+    });
+    const button = document.getElementById('wishButton');
+    const cake = document.getElementById('cake');
+    const canvas = document.getElementById('confetti');
+    const ctx = canvas.getContext('2d');
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let pieces = [], frame = null, wished = false;
+    const cats = [
+      {src:'dancing-white-cat-dance.gif', alt:'A white cat dancing for Brian Paul’s birthday'},
+      {src:'happy-cat.gif', alt:'Another dancing cat joins the birthday celebration'},
+      {src:'bc0de1de093d54df556918a9b60237a5.gif', alt:'The third cat GIF in Brian Paul’s birthday celebration'}
+    ];
+    let catIndex = 0;
+    const catParty = document.createElement('div');
+    catParty.className = 'cat-party';
+    catParty.hidden = true;
+    const catImage = document.createElement('img');
+    const catCaption = document.createElement('span');
+    catParty.append(catImage, catCaption);
+    document.querySelector('.art').append(catParty);
+    function showNextCat() {
+      const cat = cats[catIndex];
+      catImage.src = cat.src;
+      catImage.alt = cat.alt;
+      catCaption.textContent = 'Birthday dance crew · ' + (catIndex + 1) + ' / ' + cats.length;
+      cake.hidden = true;
+      catParty.hidden = false;
+      document.querySelector('.art').setAttribute('aria-label', cat.alt);
+      document.querySelector('.art-label').textContent = 'THE PAWTY HAS ARRIVED';
+      document.querySelector('.handwritten').textContent = 'A little happy dance, just for you.';
+      document.getElementById('message').textContent = 'Cat ' + (catIndex + 1) + ' of ' + cats.length + ' is here to celebrate! Click Celebrate again for the next one. 🐾';
+      catIndex = (catIndex + 1) % cats.length;
+    }
+    function resize() {
+      const ratio = Math.min(window.devicePixelRatio || 1, 2);
+      canvas.width = innerWidth * ratio; canvas.height = innerHeight * ratio;
+      canvas.style.width = innerWidth + 'px'; canvas.style.height = innerHeight + 'px';
+      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+    }
+    window.addEventListener('resize', resize); resize();
+    function celebrate() {
+      if (reducedMotion.matches) return;
+      const colors = ['#f5a9c7', '#e9c68b', '#bba6e1', '#fff0d9', '#a5cbbd'];
+      pieces = Array.from({length:150}, () => ({x:innerWidth/2,y:innerHeight*.55,vx:(Math.random()-.5)*17,vy:-5-Math.random()*13,r:Math.random()*6+3,a:Math.random()*6,spin:(Math.random()-.5)*.18,color:colors[Math.floor(Math.random()*colors.length)]}));
+      if (frame) cancelAnimationFrame(frame);
+      let lastTime = 0;
+      function draw(time) {
+        const delta = lastTime ? Math.min((time-lastTime)/16.67, 2) : 1; lastTime = time;
+        ctx.clearRect(0,0,innerWidth,innerHeight);
+        pieces.forEach(p => {p.x+=p.vx*delta;p.y+=p.vy*delta;p.vy+=.15*delta;p.a+=p.spin*delta;ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.a);ctx.fillStyle=p.color;ctx.fillRect(-p.r/2,-p.r/2,p.r,p.r*.5);ctx.restore()});
+        pieces=pieces.filter(p=>p.y<innerHeight+30);
+        if(pieces.length) frame=requestAnimationFrame(draw);else{ctx.clearRect(0,0,innerWidth,innerHeight);frame=null;}
+      }
+      frame=requestAnimationFrame(draw);
+    }
+    button.addEventListener('click', () => {
+      if (wished) {
+        showNextCat();
+        celebrate();
+        return;
+      }
+      cake.classList.add('blown');
+      document.querySelector('.art').setAttribute('aria-label','A pink two-tier birthday cake with three candles blown out. Your birthday wish has been made.');
+      document.getElementById('message').textContent = wished ? 'Here’s to you, Brian Paul. Let the celebration continue! ✨' : 'Wish made. Candles out. May this be your most wonderful chapter yet, Brian Paul! ✨';
+      button.innerHTML = 'Celebrate again <span aria-hidden="true">&nbsp; ✦</span>';
+      document.querySelector('.handwritten').textContent = 'May all your birthday wishes come true.';
+      wished = true; celebrate();
+    });
+  </script>
+</body>
+</html>
